@@ -1,29 +1,15 @@
-import Child from "./Child";
-import Member from "./Memper.jsx";
-import Picture from "./Picture.jsx";
-import Style from "./Style.css";
-
-function Name() {
-  return <h1>App 안에서 태어난 컴포넌트</h1>;
-}
-
-function App() {
-  // 컴포넌트의 조건: 함수명이 대문자로 시작, return 값 있어야 하고 태그를 꼭 넣어야함.
-
-  /*   function Name() {
-    return <h1>App 안에서 태어난 컴포넌트</h1>
-  }  -> 여기서 추가 못함
- */
-
+import Score from "./components/Score";
+const App = (props) => {
   return (
-    <div>
-      <Name></Name>
-      <h1>안녕하세요</h1>
-      <Child></Child>
-      <Child />
-      <Member></Member>
-      <Picture></Picture>
-    </div>
+    <>
+      <Score>김망고</Score>
+      <Score>강몽이</Score>
+      <Score>강아지</Score>
+      <Score>가 좋아</Score>
+      <Score>야옹</Score>
+      <Score>1</Score>
+
+    </>
   );
-}
+};
 export default App;
