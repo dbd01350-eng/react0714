@@ -1,6 +1,9 @@
-function Child() {
-  return <h3>나는 자식입니다.</h3>;
-}
-
+const Child = (a) => {
+  return (
+    <>
+      <div>Child</div>
+      <div className="text-2xl text-red-500">{a.asset}</div>
+    </>
+  );
+};
 export default Child;
-

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Btn = styled.button`
-  background-color: coral;
+  width: fit-content;
+  background-color: ${(props) => (props.$primary ? "blue" : "coral")};
   color: white;
   padding: 10px 20px;
   border: none;
