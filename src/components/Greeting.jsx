@@ -20,10 +20,14 @@ export function User({ isAdmin }) {
   return <>{isAdmin == true ? <div className="bg-amber-400">관리자 입니다</div> : <div>일반회원 입니다</div>}</>;
 }
 
-export function List() {
+export function List({ items }) {
+  console.log(items);
+
   return (
     <>
-      <div>List</div>
+      {items.map((it, idx) => (
+        <div key={idx}>{it}</div>
+      ))}
     </>
   );
 }

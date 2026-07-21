@@ -11,8 +11,12 @@ const App = (props) => {
         <Greeting text="조철수" age={18} gender="남성" job="회사원" />
       </div>
       <div className="container bg-red-100 mb-5">
-        <User isAdmin={true}/>
-        <User isAdmin={false}/>
+        <User isAdmin={true} />
+        <User isAdmin={false} />
+        <User isAdmin />
+      </div>
+      <div className="container bg-blue-100">
+        <List items={[1, 2, 3, 4, "할일"]} />
       </div>
     </>
   );
